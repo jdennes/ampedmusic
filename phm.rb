@@ -6,7 +6,7 @@ Hash.send :include, Hashie::HashExtensions
 
 class PhmClient
   include HTTParty
-  headers 'Content-Type' => 'apilication/json'
+  headers 'Content-Type' => 'application/json'
   base_uri 'http://api.powerhousemuseum.com/api/v1'
 
   def initialize(api_key=nil)
