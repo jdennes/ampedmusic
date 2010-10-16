@@ -5,11 +5,19 @@
     %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/style.css' }
   %body
     .container
-      %a{ :href => '/', :title => 'music exploration through the sydney powerhouse museum' }
+      %a{ :href => '/', :title => 'musical exploration through the sydney powerhouse museum' }
         %h1{ :class => 'pink-bottom-border' }
           musical exploration
+      %p
+        Make your way through the 
+        %a{ :href => 'http://powerhousemuseum.com/', :target => "_blank" }
+          powerhouse museum's
+        collection of musical-related items... :)
       = yield
       %div{ :id => 'footer' }
-        made by  
+        a super-quick hack by
         %a{ :href => "http://jdenn.es", :target => "_blank" }
-          james
+          james dennes
+        utilising the new 
+        %a{ :href => 'http://api.powerhousemuseum.com/', :target => "_blank"  }
+          powerhouse api
