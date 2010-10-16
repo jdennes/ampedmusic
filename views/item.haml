@@ -1,0 +1,12 @@
+%h2{ :class => 'item-title' }
+  =@item.title
+
+%div{ :class => 'item-details' }
+  =@item.description
+
+%h2
+  ="Multimedia..."
+
+- if @item.multimedia
+  - @item.multimedia.each do |m|
+    %img{ :width => m.images.thumbnail.width, :height => m.images.thumbnail.height, :src => m.images.thumbnail.url }

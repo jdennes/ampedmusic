@@ -1,0 +1,17 @@
+body { color: #5c5c5c; background: #111111; font-family: Helvetica, Arial, Sans-Serif; text-align: center; margin: 0; vertical-align: middle; }
+a:link, a:visited { color: #3D3D3D  ; text-decoration: none; }
+a:hover, a:focus { text-decoration: none; background: #231F1F; color: #ffffff; }
+.container { text-align: left; width: 760px; margin: 0 auto; }
+img { border: 0; }
+a img.thumb { border: 2px #111111 solid; }
+a:hover img.thumb { border: 2px #ff1170 solid; background: #111111; }
+h1 { color: #ff1170; font-size: 4em; clear: right; text-align: right; margin: 0 0 14px 0; text-shadow: #bb004b 2px 2px 2px; }
+h1 a:hover, h1 a:focus { text-decoration: none; }
+h1 a:link, h1 a:hover, h1 a:focus, h1 a:visited { color: #ff1170; background: #111111; text-decoration: none; }
+h2 { font-size: 1.8em; clear: right; text-align: left; margin: 14px 0; padding-top: 14px; }
+.pink-bottom-border { padding-bottom: 6px; border-bottom: 1px dotted #ff1170; }
+div#footer { text-align: right; font-size: 0.9em; border-top: 1px dotted #ff1170; margin-top: 12px; padding: 8px 0 4px 0; }
+.heatmap-element { padding: 12px; }
+div.subject-item { padding: 8px 0; }
+div.subject-item .title { font-size: 20px; padding: 0 8px; padding: 6px; }
+div.subject-item .description { padding: 0 8px; }

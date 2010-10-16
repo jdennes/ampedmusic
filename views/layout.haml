@@ -1,0 +1,15 @@
+!!! 5
+%html{html_attrs('en-AU')}
+  %head
+    %title musical exploration
+    %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/style.css' }
+  %body
+    .container
+      %a{ :href => '/', :title => 'music exploration through the sydney powerhouse museum' }
+        %h1{ :class => 'pink-bottom-border' }
+          musical exploration
+      = yield
+      %div{ :id => 'footer' }
+        made by  
+        %a{ :href => "http://jdenn.es", :target => "_blank" }
+          james

@@ -1,0 +1,11 @@
+%h2
+  ="#{@subject.name}"
+
+- if @subject
+  -@subject.items.each do |i|
+    %div{ :class => 'subject-item' }
+      %div{ :class => 'title' }
+        %a{ :href => "/item/#{i.id}" }
+          =i.title
+      %div{ :class => 'description' }
+        =i.description
