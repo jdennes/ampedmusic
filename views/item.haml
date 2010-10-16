@@ -4,9 +4,13 @@
 %div{ :class => 'item-details' }
   =@item.description
 
-%h2
-  ="Multimedia..."
+%p
+  %a{ :href => @item.permanent_url, :target => '_blank' }
+    powerhouse link
 
 - if @item.multimedia
+  %h2
+    ="Multimedia..."
+
   - @item.multimedia.each do |m|
     %img{ :width => m.images.thumbnail.width, :height => m.images.thumbnail.height, :src => m.images.thumbnail.url }

@@ -1,5 +1,5 @@
 %h2
-  ="#{@subject.name}"
+  ="#{@subject.name} (#{@subject.items.size} items)"
 
 - if @subject
   -@subject.items.each do |i|
